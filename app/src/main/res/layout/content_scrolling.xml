@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/nestdscrolview"
+    android:fillViewport="true"
+    android:background="@color/gray"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.naseem.priceomania1.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <ScrollView
+        android:id="@+id/scrolview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/re1"
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--<android.support.v4.view.ViewPager-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="180dp"-->
+
+                <!--android:id="@+id/viewpager">-->
+
+
+
+
+
+            <!--</android.support.v4.view.ViewPager>-->
+
+            <RelativeLayout
+                android:background="#DFDFDF"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="wrap_content"
+                    android:layout_height="170dp"
+
+                    android:id="@+id/viewpager">
+                </android.support.v4.view.ViewPager>
+
+
+
+                    <LinearLayout
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/SliderDots"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+                    </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginTop="170dp"
+                android:background="#DFDFDF"
+                android:orientation="vertical"
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:text="Mobile name"
+                    android:id="@+id/mobilenametext"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+
+                    android:text="rating"
+                    android:id="@+id/ratingtext"
+
+
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+
+                <Button
+                    android:background="@drawable/buttob_border"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/colorbutton"
+                    android:textColor="@color/purple"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:text="Colors, Storage, Networks >"
+                    android:layout_width="265dp"
+                    android:layout_height="38dp" />
+
+                <TextView
+
+                    android:text="price"
+                    android:textSize="20dp"
+                    android:textColor="#ffff"
+                    android:id="@+id/priceTextd"
+                       android:background="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+
+
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/card1"
+                android:layout_below="@+id/linear"
+                app:cardCornerRadius="10dp"
+                card_view:cardElevation="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/li1"
+                    android:orientation="horizontal"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
+
+                    <LinearLayout
+                        android:id="@+id/li2"
+                        android:layout_gravity="top|start"
+                        android:orientation="vertical"
+                        android:layout_width="190dp"
+                        android:layout_height="59dp">
+                        <TextView
+                            android:id="@+id/siteTextview"
+                            android:gravity="start"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Amazone"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:id="@+id/mobilename"
+                            android:text="Apple iPhone"
+                            android:layout_marginStart="10dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="right"
+
+                        android:orientation="horizontal"
+                        android:id="@+id/li3"
+                        android:layout_width="190dp"
+                        android:layout_height="80dp">
+                        <ImageView
+                            android:id="@+id/imageview"
+
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/souqimg"
+                            android:layout_width="164dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/li12"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp">
+
+                    <LinearLayout
+                        android:id="@+id/li121"
+                        android:orientation="vertical"
+                        android:layout_width="144dp"
+                        android:layout_height="65dp">
+                        <TextView
+                            android:id="@+id/pricetext"
+
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp"
+                            android:text="AED 2199.00"
+                            android:textColor="@color/purple"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:text="Shipping costs veri.."
+                            android:layout_marginStart="10dp"
+
+                            android:layout_width="142dp"
+                            android:layout_height="25dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:id="@+id/li122"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp">
+
+
+                        <TextView
+
+
+                            android:text="More Info+"
+                            android:textColor="@color/green"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp" />
+
+                        <Button
+                            android:text="Go to site"
+                            android:background="@color/purple"
+                            android:textColor="#fff"
+                            android:layout_weight="5"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="70dp"
+                            android:layout_height="35dp" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/card2"
+                app:cardCornerRadius="10dp"
+                card_view:cardElevation="3dp"
+                android:layout_below="@+id/linear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="170dp" >
+
+                <LinearLayout
+                    android:id="@+id/lin1"
+                    android:orientation="horizontal"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin2"
+                        android:layout_gravity="top|start"
+                        android:orientation="vertical"
+                        android:layout_width="190dp"
+                        android:layout_height="59dp">
+                        <TextView
+                            android:id="@+id/siteTextview1"
+                            android:gravity="start"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Flipkart"
+                            android:textColor="#000"
+                            android:textSize="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:id="@+id/mobilename1"
+                            android:text="iPhone7 Plus"
+                            android:layout_marginStart="10dp"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="right"
+
+                        android:orientation="horizontal"
+                        android:id="@+id/lin3"
+                        android:layout_width="190dp"
+                        android:layout_height="80dp">
+                        <ImageView
+                            android:id="@+id/imageview1"
+
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/souqimg"
+                            android:layout_width="164dp"
+                            android:layout_height="50dp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lin12"
+                    android:layout_marginTop="80dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp">
+
+                    <LinearLayout
+                        android:id="@+id/lin121"
+                        android:orientation="vertical"
+                        android:layout_width="144dp"
+                        android:layout_height="65dp">
+                        <TextView
+                            android:id="@+id/pricetext1"
+
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="10dp"
+                            android:text="AED 30099.00"
+                            android:textColor="@color/purple"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:text="Shipping costs veri.."
+                            android:layout_marginStart="10dp"
+
+                            android:layout_width="142dp"
+                            android:layout_height="25dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:id="@+id/lin122"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp">
+
+
+                        <TextView
+
+
+                            android:text="More Info+"
+                            android:textColor="@color/green"
+                            android:textSize="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp" />
+
+                        <Button
+                            android:text="Go to site"
+                            android:background="@color/purple"
+                            android:textColor="#fff"
+                            android:layout_weight="5"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="70dp"
+                            android:layout_height="35dp" />
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview"
+
+                android:layout_marginTop="655dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+          <android.support.v7.widget.CardView
+              android:layout_marginTop="20dp"
+             android:id="@+id/cardviewText"
+              android:layout_below="@+id/recyclerview"
+              android:layout_width="match_parent"
+              android:layout_height="60dp">
+
+              <TextView
+                  android:textAllCaps="false"
+                  android:text="Popular Apple Products"
+                  android:textSize="15dp"
+                  android:layout_marginStart="15dp"
+                  android:gravity="center|start"
+                  android:layout_gravity="center_vertical"
+                  android:layout_width="270dp"
+                  android:layout_height="30dp" />
+
+              <TextView
+                  android:text=">"
+                  android:textSize="20dp"
+                  android:gravity="center"
+                  android:layout_marginStart="300dp"
+                  android:layout_width="40dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_height="30dp" />
+
+          </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/cardviewText1"
+                android:layout_below="@+id/cardviewText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textAllCaps="false"
+                    android:text="Popular Apple Mobile Phones"
+                    android:textSize="15dp"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center|start"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="270dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:text=">"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginStart="300dp"
+                    android:layout_width="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="30dp" />
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</android.support.v4.widget.NestedScrollView>

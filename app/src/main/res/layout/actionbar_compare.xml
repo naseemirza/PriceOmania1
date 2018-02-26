@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/actionbar_compare"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/nestdscrolview"
+        android:fillViewport="true"
+        android:background="@color/gray"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.naseem.priceomania1.ScrollingActivity">
+
+        <ScrollView
+            android:id="@+id/scrolview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/re1"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/apple"
+                    android:layout_width="140dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/nameTextview"
+                    android:text="Mobile Name"
+                    android:layout_below="@+id/imageview"
+                    android:textSize="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:id="@+id/priceTextview1"
+                    android:text="rating"
+                    android:layout_below="@+id/mobilename"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+                <Button
+                    android:background="@drawable/buttob_border"
+                    android:id="@+id/colorbutton"
+                    android:textColor="@color/purple"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/ratingtext"
+                    android:text="Colors, Storage, Networks >"
+                    android:layout_width="265dp"
+                    android:layout_height="38dp"
+                    android:layout_centerHorizontal="true" />
+
+
+                <TextView
+                    android:id="@+id/onlinestoreTextview2"
+                    android:text="Price"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/colorbutton"
+                    android:textSize="20dp"
+                    android:textColor="#ffff"
+                    android:background="@color/green"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+
+
+                <!--<android.support.v4.view.ViewPager-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="180dp"-->
+                    <!--android:id="@+id/viewpager">-->
+                <!--</android.support.v4.view.ViewPager>-->
+
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/re2"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_below="@+id/viewpager"-->
+                    <!--android:layout_height="8dp">-->
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/SliderDots"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:gravity="center_vertical|center_horizontal"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"/>-->
+
+                <!--</RelativeLayout>-->
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
